@@ -755,6 +755,8 @@ SERVICE
     border: none; 
 
     cursor:pointer;
+
+    color: black;
 }
 
 /*============================
