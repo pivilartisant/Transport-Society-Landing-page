@@ -287,12 +287,9 @@ nav.classList.toggle('active')
 burgerTop.classList.toggle('toggled')
 burgerMid.classList.toggle('toggled')
 burgerBot.classList.toggle('toggled')
-navLink1.style.color = 'white';
-navLink2.style.color = 'white';
-navLink3.style.color = 'white';
-navLink4.style.color = 'white';
-navLink5.style.color = 'white';
 });
+
+
 
 navLink1.addEventListener('click', ()=> {
     burgerMenu.classList.remove('active')
