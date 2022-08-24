@@ -281,7 +281,6 @@ const navLink4 = document.getElementById('service-nav-link');
 const navLink5 = document.getElementById('location-nav-link');
 
 burgerMenu.addEventListener('click', ()=> {
-
 burgerMenu.classList.toggle('active')
 nav.classList.toggle('active')
 burgerTop.classList.toggle('toggled')
