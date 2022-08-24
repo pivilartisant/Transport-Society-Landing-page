@@ -160,8 +160,13 @@ NAVBAR
     font-weight: 600;/*SemiBold*/
     font-size: 24px;
 
-    color: var(--main-bg-color);
+    background-color: var(--main-green);
 }
+
+.nav-list li a {
+    color: white;
+}
+
 
 .country-selection {
     display: none;

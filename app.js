@@ -280,58 +280,31 @@ const navLink3 = document.getElementById('expertise-nav-link');
 const navLink4 = document.getElementById('service-nav-link');
 const navLink5 = document.getElementById('location-nav-link');
 
-burgerMenu.addEventListener('click', ()=> {
-burgerMenu.classList.toggle('active')
-nav.classList.toggle('active')
-burgerTop.classList.toggle('toggled')
-burgerMid.classList.toggle('toggled')
-burgerBot.classList.toggle('toggled')
-});
+burgerMenu.addEventListener('click',()=>burgerClick());
+
+function burgerClick (){
+    burgerMenu.classList.toggle('active')
+    nav.classList.toggle('active')
+    burgerTop.classList.toggle('toggled')
+    burgerMid.classList.toggle('toggled')
+    burgerBot.classList.toggle('toggled')
+}
 
 
 
-navLink1.addEventListener('click', ()=> {
+
+navLink1.addEventListener('click',()=> navClick());
+navLink2.addEventListener('click',()=> navClick());
+navLink3.addEventListener('click',()=> navClick());
+navLink4.addEventListener('click',()=> navClick());
+navLink5.addEventListener('click',()=> navClick());
+
+
+
+function navClick (){
     burgerMenu.classList.remove('active')
     burgerTop.classList.remove('toggled')
     burgerMid.classList.remove('toggled')
     burgerBot.classList.remove('toggled')
     nav.classList.remove('active')
-    console.log('you clicked nav link one')
-    });
-
-navLink2.addEventListener('click', ()=> {
-    burgerMenu.classList.remove('active')
-    burgerTop.classList.remove('toggled')
-    burgerMid.classList.remove('toggled')
-    burgerBot.classList.remove('toggled')
-    nav.classList.remove('active')
-    console.log('you clicked nav link one')
-    });
-
-navLink3.addEventListener('click', ()=> {
-    burgerMenu.classList.remove('active')
-    burgerTop.classList.remove('toggled')
-    burgerMid.classList.remove('toggled')
-    burgerBot.classList.remove('toggled')
-    nav.classList.remove('active')
-    console.log('you clicked nav link one')
-    });
-
-navLink4.addEventListener('click', ()=> {
-    burgerMenu.classList.remove('active')
-    burgerTop.classList.remove('toggled')
-    burgerMid.classList.remove('toggled')
-    burgerBot.classList.remove('toggled')
-    nav.classList.remove('active')
-    console.log('you clicked nav link one')
-    });
-
-navLink5.addEventListener('click', ()=> {
-    burgerMenu.classList.remove('active')
-    burgerTop.classList.remove('toggled')
-    burgerMid.classList.remove('toggled')
-    burgerBot.classList.remove('toggled')
-    nav.classList.remove('active')
-    console.log('you clicked nav link one')
-    });
-
+}
