@@ -1,0 +1,1089 @@
+/*======================
+
+FONT IMPORT
+
+========================*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Fonts/Poppins/Poppins-Regular.ttf');
+    font-weight:300;
+    }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+    }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Fonts/Poppins/Poppins-Bold.ttf');
+    }
+
+@font-face {
+    font-family: 'Muli';
+    src: url('./Fonts/muli/Muli-SemiBold.ttf');
+    font-weight:600;
+    }
+
+@font-face {
+    font-family: 'Muli';
+    src: url('./Fonts/muli/Muli-Light.ttf');
+    font-weight: 300;
+    }
+    
+/*================
+
+INITIAL FONT SETUP
+
+=================*/
+
+p{
+    font-family: Muli;
+}
+
+/*max width 100% allwos for no navbar overflow*/
+*{
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    padding:0px;
+    scroll-behavior: smooth;
+    --main-bg-color: #FFFFFF;
+    --main-green: #039F4E;
+    --alt-bg-color:#F3F3F3;
+    --main-border-color :#ECECEC;
+    --main-footer-color:#F7FCF9;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*==============================================================================================================================
+
+MOBILE FORMAT STYLING
+
+================================================================================================================================*/
+
+
+@media screen and (min-width:320px) and (max-width:850px){
+
+/*========================
+
+BODY
+
+=========================*/
+body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 430px;  
+    box-sizing: content-box;
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*========================
+
+NAVBAR
+
+=========================*/
+    
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    background-color: var(--main-bg-color);
+    border-bottom: solid 2px var(--main-green);
+    
+    z-index: 1;
+}
+
+.company-logo{
+    display: none;
+}
+
+.company-title {
+    margin-left: 10px;
+    
+    font-family: Poppins;
+    font-weight: 600;/*SemiBold*/
+    font-size: 18px;
+}
+
+.nav-link-container {
+    background-color: var(--main-green);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    /* transition: opacity 0.3s ease-in-out; */
+
+    overflow: hidden;
+}
+
+.active{
+    transform: translateX(0);
+    /* transition: opacity 0.3s ease-in-out; */
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+    height: 100%;
+
+    list-style: none;
+
+    position: relative;
+    left: 30px;
+
+
+    font-family: Poppins;
+    font-weight: 600;/*SemiBold*/
+    font-size: 24px;
+
+    color: var(--main-bg-color);
+}
+
+.country-selection {
+    display: none;
+}
+
+.burger-menu-container {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+}
+.burger-bar{
+    background-color: black;
+    height: 4px;
+    width: 36px;
+    border-radius: 20px;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggled {
+    background-color: var(--main-bg-color);
+}
+/*========================
+
+MAIN
+
+=========================*/
+
+main {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 100%;  
+    box-sizing: content-box;
+}
+
+h2 {
+    font-family: Poppins;
+    font-weight: 700/*Bold*/
+}
+
+/*========================
+
+HERO
+
+=========================*/
+
+.hero-container {
+  
+    height:844px;
+    position: relative;
+    background-color: var(--main-green);
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Transparent bg img alternative*/
+
+.hero-container::before {
+    content :'';
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    background-image: url('./assests/hero/heroMobile.png');
+    background-size: cover;
+    background-position:top center;
+    opacity: 0.2;
+
+
+}
+
+
+
+.hero-container h2 {
+    position: relative;
+    color: var(--main-bg-color);
+    font-size: 36px;
+    margin:80px 40px 40px 40px;    
+}
+
+.desktop-h2{
+    display: none;
+}
+
+.hero-content{
+   position: relative;
+    margin:40px 40px 40px 40px;
+}
+
+/*Transparent bg img alternative*/
+
+.caroussel{
+    visibility: hidden;
+    height:220px;
+    width: auto;
+    display: flex;
+}
+.caroussel-button{
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image-caroussel-button{
+    position: relative;
+    top: -120px;
+    background:none;
+    border: none;
+
+    padding: 0px 20px 0px 20px;
+
+    cursor:pointer;
+}
+
+
+
+.hero-p-content {
+   
+    color: var(--main-bg-color);
+    margin:40px 0px 40px 0px;
+     font-family: Muli;
+     font-weight:300;
+}
+
+
+.brochure-cta-button{
+    position: relative;
+    height:50px;
+    width:225px;
+
+    font-family: Muli;
+    font-weight: 600;
+
+    border: none; 
+
+    cursor:pointer;
+}
+
+.brochure-cta-desktop{
+    display: none;
+}
+
+/*============================
+
+VEHICULES
+
+==============================*/
+
+.vehicules-container {
+    height:auto;
+    width:100%;
+    padding-top: 80px;
+    margin:0px 0px 0px 0px; 
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--main-bg-color);
+}
+
+.vehicules-container h2 {
+    position: relative;
+    color: black;
+    font-size: 36px;
+    margin:0px 40px 40px 40px;    
+}
+
+/* .vehicules-content {
+
+} */
+
+.vehicule-button-container{
+    margin:20px 40px 20px 40px;   
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+/*=====================
+
+VEHICULE CONTENT SECTION
+
+=======================*/
+
+/*These are my two buttons states : on/off. On is selected and off is deselected*/
+.vehicule-button-container button{
+    height: 50px;
+    margin:0px 10px 0px 10px;  
+    font-size: 14px;  
+    font-family: Muli;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.on{
+    color:var(--main-bg-color);
+    border: none;
+    background-color: var(--main-green);
+    border-radius: 20px;
+    width: auto;
+    height: 40px;
+
+    padding: 0px 20px 0px 20px;
+}
+
+.off{
+    color:var(--main-green);
+    border: solid 1px var(--main-green);
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    width: auto;
+    height: 40px;
+
+    padding: 0px 20px 0px 20px;
+}
+
+.vehicule-content{
+    height: 100%;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+/*This is our hidden class when vehicules sizes are not selected. It makes it so said element does not display*/
+.hide {
+    display: none;
+}
+
+/*This is our different size classes for out vehicules*/
+
+.lrg, .med, .small{
+    height: auto;
+    width: 305px;
+
+    margin: 20px 0px 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-radius: 10px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.vehicule-img-container {
+    height: 146px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--main-green);
+}
+
+
+
+.vehicule-content div p {
+    height: 73px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 20px;
+
+    padding: 0px 30px 0px 30px;
+}
+
+/*This is the message that displays if none of are sizes are selected. Default state is message-hidden */
+.message {
+    height: 500px;
+    width:50%;
+
+    padding: 0px 40px 0px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 20px;
+    
+    color: var(--main-green);
+}
+
+.message-hidden {
+    display: none;
+}
+
+
+/*============================
+
+ABOUT
+
+==============================*/
+
+.about-container {
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin:0px 0px 0px 0px;
+}
+
+.about-container h2 {
+    font-family: Poppins;
+    font-weight: 700;/*Bold*/
+    font-size: 32px;
+    margin:40px 40px 40px 40px; 
+}
+
+.about-container h3 {
+    color: var(--main-green);
+
+    font-family: Poppins;
+    font-weight: 700;/*Bold*/
+    font-size: 20px;
+
+
+    margin:40px 40px 40px 40px; 
+}
+
+.about-container-p {
+    
+    font-family: Muli;
+    font-size: 16px;
+
+    margin:40px 40px 40px 40px; 
+}
+
+.about-container article h4 {
+    
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin:40px 40px 40px 40px; 
+}
+
+.number-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin:40px 0px 40px 0px; 
+}
+
+.number-row-one {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+}
+
+.number-row-one div {
+    margin:10px 20px 10px 20px;  
+    width:90px;
+}
+
+.number-row-two {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+}
+
+.number-row-two div {
+    margin:10px 20px 10px 20px; 
+    width:90px;
+}
+.number-row-one div .number {
+    font-family: Muli;
+    font-size: 24px;
+}
+
+.number-row-two div .number {
+    font-family: Muli;
+    font-size: 24px; 
+}
+
+.number-row-one div .number-p {
+    font-family: Muli;
+    font-size: 14px; 
+    
+    color: var(--main-green)
+}
+
+.number-row-two div .number-p {
+    font-family: Muli;
+    font-size: 14px; 
+    
+    color: var(--main-green)
+}
+
+.about-img {
+    display: none;
+}
+
+/*============================
+
+EXPERTISE
+
+==============================*/
+
+.expertise-container{
+    height: auto;
+    padding-top: 80px;
+    margin:0px 0px 0px 0px;
+}
+
+.expertise-container h3 {
+
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: var(--main-green);
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.expertise-container h2 {
+
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 32px;
+
+    color: black;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.expertise-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.expertise-img {
+    margin: 20px 0px 20px 0px;
+}
+
+.expertise-content div {
+
+    padding:20px 20px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    text-align: center  
+}
+
+.expertise-content div h4 {
+
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+
+    margin: 10px 0px 10px 0px;
+}
+
+.expertise-content div p {
+
+    font-family: Muli;
+    font-size: 16px;
+
+    margin: 10px 0px 10px 0px;
+}
+
+/*============================
+
+SERVICE
+
+==============================*/
+
+.service-container{
+    height: auto;
+    
+    margin:80px 0px 80px 0px;
+    padding:80px 0px 0px 0px;
+
+    background-color: var(--main-green);
+    
+    color:var(--main-bg-color);
+    position: relative;
+}
+
+.service-container::before {
+    content :'';
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    background-image: url('./assests/Service/man.png');
+    background-size: cover;
+    background-position:top left;
+    opacity: 0.2;
+}
+
+.service-content h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 36px;
+    margin:40px 0px 40px 0px; 
+    
+}
+
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 40px 40px 40px;
+
+    position: relative;
+    
+}
+
+.service-img{
+    display: none;
+}
+
+.service-content div {
+    
+    margin:20px 0px 20px 0px; 
+    
+}
+
+.service-content div h4 {
+
+    margin:10px 0px 10px 0px; 
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.service-content div p {
+
+    margin:10px 0px 10px 0px; 
+
+    font-family: Muli;
+    font-size: 16px;
+    
+}
+
+.service-cta-container {
+    text-align: center;
+}
+
+.service-cta-button {
+    height:50px;
+    width:225px;
+
+    font-family: Muli;
+    font-weight: 600;
+
+    border: none; 
+
+    cursor:pointer;
+}
+
+/*============================
+
+CONTACT
+
+==============================*/
+
+.contact-container {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    margin:40px 0px 40px 0px; 
+    padding:0px 0px 40px 0px; 
+}
+
+.contact-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    
+}
+
+.contact-content h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 36px;
+    margin:40px 0px 40px 0px;   
+}
+
+.contact-more-info {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.content-img{
+    position: relative;
+    right: 8px;
+
+    margin:40px 0px 40px 0px;   
+}
+
+.contact-content-p{
+    margin:40px 40px 40px 40px; 
+    align-self: flex-start
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    margin:20px 40px 20px 40px; 
+}
+
+.input-form {
+    height: 20px;
+
+    background:none;
+    border: none;
+    border-bottom: solid 2px black;
+    width: 100%;
+}
+
+.profile, .gender, .forename, .surname, .company-name, .job-title, .email, .phone, .select-location, .vrite-message, .form-button-container{
+    margin:10px 0px 10px 0px; 
+}
+
+.input-form:focus {
+    outline: none;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.profile-label, .gender-label{
+    font-family: Muli;
+    font-size: 16px;
+    margin:0px 10px 0px 10px;
+}
+
+.form-title{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#select-location {
+    width:100%;
+
+    margin:10px 0px 10px 0px; 
+
+    background:none;
+    border: none;
+    border-bottom: solid 2px black;
+
+
+    padding: 0px 10px 0px 0px;
+
+    font-family: Muli;
+    font-size: 16px;
+}
+
+#select-location:focus{
+    outline:none;
+}
+
+
+.write-message{
+    margin:10px 0px 10px 0px; 
+}
+
+#message {
+    margin:10px 0px 10px 0px; 
+
+    width: 100%;
+    min-width:100%;
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+
+    resize: none;
+
+    font-family: Muli;
+    font-size: 16px;
+}
+
+#message:focus{
+    outline: none;
+}
+
+.contact-form-rgpd{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#rgpd-agree{
+    margin:0px 10px 0px 0px;
+    accent-color: var(--main-green);
+}
+.contact-form-rgpd p {
+    font-family: Muli;
+    font-size: 14px; 
+}
+
+.form-button-container {
+    text-align: center;
+
+    margin:80px 0px 20px 0px; 
+}
+
+.submit-button{
+
+      
+    height:50px;
+    width:225px;
+
+    font-family: Muli;
+    font-weight: 600;
+
+    border: none; 
+    color: var(--main-bg-color);
+    background-color: var(--main-green);
+
+    cursor:pointer;
+}
+
+/*============================
+
+LOCATION
+
+==============================*/
+
+.location-container {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    margin:40px 0px 0px 0px; 
+    padding:80px 0px 0px 0px; 
+
+}
+
+.local-ageny-contact{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+
+    padding: 0px 40px 0px 40px;
+    
+    height: 136px;
+    background-color: var(--alt-bg-color);
+    
+}
+
+.local-ageny-contact h4 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+}
+
+.local-ageny-contact p {
+    font-family: Muli;
+    font-size: 16px;
+}
+
+.address {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border-bottom: solid 2px var(--main-border-color);
+
+    cursor: pointer;
+}
+
+.address h5 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+
+    margin: 20px 0px 0px 40px;
+}
+
+.address-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+
+    margin: 0px 0px 20px 40px;
+
+}
+
+.address-chevron {
+    padding: 0px 20px 0px 0px;
+    color:var(--main-green);
+}
+
+iframe {
+
+    width:100%;
+    min-height:400px;  
+}
+
+/*============================
+
+FOOTER
+
+==============================*/
+
+.footer-container{
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.footer-logo{
+    display:none;
+}
+
+.footer-rgpd-content{
+    font-family: Poppins;
+    font-size: 10px;
+    background-color:var(--main-footer-color);
+    padding:20px 20px 20px 20px; 
+}
+
+.footer-legal{
+
+
+    width: 100%;
+    height: auto;
+    display:flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.footer-legal p {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 300;
+
+    padding: 10px 0px 10px 0px;
+
+    color: white;
+    cursor: pointer;
+
+    transition: color ease-in-out 1s;
+}
+
+.footer-legal p:hover {
+    color: var(--main-green);
+}
+
+};/*END OF MOBILE MEDIA QUERY*/
+    
+

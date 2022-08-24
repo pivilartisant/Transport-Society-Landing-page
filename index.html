@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Society</title>
+    <link rel="stylesheet" href="./mobileStyle.css">
+    <link rel="stylesheet" href="./desktopStyle.css">
+</head>
+
+<!--
+    Responsive format first, desktop will be signaled by "Desk" comment
+-->
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="./assests/Logo.png" alt="" class="company-logo">
+            <p class="company-title">Transport Society</p>
+        </div>
+        <!--Se if I can put fontawesome icon instead or make it in css-->
+        <div class="nav-link-container" id="nav-link">
+            <ul class="nav-list">
+                <li> <a href="#vehicules-nav" id="vehicules-nav-link"> Our vehicules </a></li>
+                <li> <a href="#about-nav" id="about-nav-link"> About transport society </a></li>
+                <li> <a href="#expertise-nav" id="expertise-nav-link"> The refrigeration specialist </a> </li>
+                <li> <a href="#service-nav" id="service-nav-link"> Full service! </a></li>
+                <li> <a href="#location-nav" id="location-nav-link"> Our agencies </a> </li>
+                <li class="country-selection"> <div class="flag-container"><img src="./assests/southafrica.png" alt="" class="south-africa-flag"> </div>
+                    <select id="select-location" name="select-location">
+
+                    <option value="South-Africa">South Africa</option>
+                    
+                    <option value="France">France</option>
+                    
+                    <option value="Espagne">Espagne</option>
+        
+                </select>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-menu-container" id="burger-menu">
+                <div class="burger-bar" id="burger-top">
+
+                </div>
+                <div class="burger-bar" id="burger-mid">
+
+                </div>
+                <div class="burger-bar" id="burger-bot">
+                  
+                </div>
+        </div>
+    </nav>
+
+    <main class="wrapper">
+
+        <section class="hero-container">
+
+            <h2>Refrigerated vehicle rental</h2>
+
+            <article class="hero-content">
+                
+                <p class="desktop-h2">Refrigerated vehicle rental</p>
+
+
+                <div class="caroussel">
+
+                    <img src="" alt="Renault ZE truck driving on road" id="truck-hero-image" class="hero-image" style="width: max-content;" > 
+
+                </div>    
+
+                    <div class="caroussel-button">
+
+                        <button id="prev-btn" class="image-caroussel-button button-left"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="next-btn" class="image-caroussel-button button-right"><i class="fa-solid fa-chevron-right"></i></button>
+
+                    </div>
+
+                <div class="hero-p-content">
+
+                <p>When you need to transport chilled or frozen products, <br>Petit Forestier offers a full range of vehicles for hire  <br>on a short, medium or long-term basis.</p>
+
+                </div>  
+
+                <div class="brochure-cta-desktop"> 
+                
+                    <button class="brochure-cta-button-desktop"> Download our brochure </button>
+                
+                </div>
+
+            </article>
+            
+            <div class="brochure-cta"> 
+                
+                <button class="brochure-cta-button"> Download our brochure </button>
+            
+            </div>
+        </section>
+            <!--Trucks will appear accordingly to buttons in mobile mode -->
+        <section class="vehicules-container" id="vehicules-nav">
+
+            <h2>Our current range of vehicules</h2>
+
+                <div class="vehicule-button-container">
+
+                    <button id="small-btn" class="on" >Small vehicules</button>
+
+                    <button id="medium-btn" class="off">Medium vehicules</button>
+
+                    <button id="large-btn" class="off">Large vehicules</button>
+
+                </div>
+
+                <br>
+
+                <article class="vehicule-content">
+
+                    <div class="hide desktop-vh" id="truck-one">
+
+                        <div class="vehicule-img-container">
+
+                            <img src="./assests/vehicules/UDTruck.png" alt="UD Trucks Croner PKE250 H30" >
+
+                        </div>
+
+                        <p>UD Trucks Croner <br> PKE250 H30</p>
+
+                    </div>
+
+                    <div class="hide desktop-vh" id="truck-three">
+
+                        <div class="vehicule-img-container">
+
+                            <img src="./assests/vehicules/500.png" alt="Isuzu NQR 500">
+
+                        </div>
+
+                        <p>Isuzu NQR 500</p>
+
+                    </div>
+
+                    <div class="hide desktop-vh" id="truck-two">
+
+                        <div class="vehicule-img-container">
+
+                            <img src="./assests/vehicules/850.png" alt="Isuzu FTR 850">
+
+                        </div>
+
+                        <p>Isuzu FTR 850</p>
+
+                    </div>
+                    
+                    <div class="small desktop-vh" id="truck-four">
+                        
+                        <div class="vehicule-img-container">
+                        
+                            <img src="./assests/vehicules/TOYOTA.png" alt="Toyota Dyna">
+                        
+                        </div>
+                        
+                        <p>Toyota Dyna</p>
+                    
+                    </div>
+                    
+                    <div class="small desktop-vh" id="truck-five">
+                        
+                        <div class="vehicule-img-container">
+                        
+                            <img src="./assests/vehicules/Petite.png" alt="Fiat Doblo">
+                        
+                        </div>
+                        
+                        <p>Fiat Doblo fourgon</p>
+                    
+                    </div>
+                    
+                    <p class="message-hidden" id="vh-Error-Msg"> Opps it seems like you haven't selected any vehicule size !</p>
+                
+                </article> 
+                    
+            
+        </section>
+
+        <section class="about-container" id="about-nav">
+            
+            <article class="about-content">
+                
+                <h2>Working together to ensure health & safety and Food safety by simplifying the cold chain every day.</h2>
+            
+                    <h3>Transport society, world leader in refrigeration for hire</h3>
+                
+                    <p class="about-container-p">Transport society is a family business, founded in France in 1907. Through our knowledge and expertise, we have grown to become 
+                    the market leader in the cold storage sector. We have an extensive fleet of hire vehicles at our disposal, across a large network of branches, covering 22 countries in Europe, Middle-East, Africa 
+                    and in the USA. Through this coverage, Transport society serves over 15,000 customers, with a continued focus on providing high quality and excellent service.</p>
+                
+                    <h4>Transport society in numbers</h4>
+                
+                <div class="number-container">
+
+                    <div class="number-row-one">
+                        
+                        <div>
+                            
+                            <p class="number">+62,000</p> 
+                            
+                            <p class="number-p">refrigerated <br>vehicles</p>
+                        
+                        </div>
+                        
+                        <div >
+                            
+                            <p class="number">+15,000</p>
+                            
+                            <p class="number-p">customers</p>
+                        
+                        </div>
+                        
+                        <div>
+                            
+                            <p class="number">+4,500</p>
+                            
+                            <p class="number-p">employees</p>
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="number-row-two">
+                        
+                        <div>
+                            
+                            <p class="number">+300</p>
+                            
+                            <p class="number-p">sites worldwide</p>
+                        
+                        </div>
+                        
+                        <div>
+                            
+                            <p class="number">€849 M</p>
+                            
+                            <p class="number-p">turnover in 2021</p>
+                        
+                        </div>
+                        
+                        <div>
+                            
+                            <p class="number">500+</p>
+                            
+                            <p class="number-p">refrigeration specialists</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="about-img-container">
+                <img src="./assests/about/driver.png" alt="" class="about-img">    
+            </div>
+        </section>
+
+        <section class="expertise-container" id="expertise-nav">
+
+            
+            <h3>Transport society</h3>
+                
+            <h2>The refrigeration specialist</h2>
+
+            <article class="expertise-content">
+                
+
+                    <img src="./assests/expertises/Av_DobloFo.png" alt="Front of Fiat Doplo" class="expertise-img">
+
+                <div class="expertise-top-left">
+                    
+                    <h4>The only 100% refrigerated rental company</h4>
+                    
+                    <p>Transport society is the only rental company whose business focuses exclusively on cold storage.</p>
+                
+                </div>
+                
+                <div class="expertise-top-right">
+                    
+                    <h4>+500 fridge specialist</h4>
+                    
+                    <p>Trained to offer you the best in class service.</p>
+                
+                </div>
+                
+                <div class="expertise-bottom-left">
+                    
+                    <h4>More than 100 years of expertise in the transportation sector</h4>
+                    
+                    <p>Transport society hires out more than 5,500 new refrigerated vehicles every year.</p>
+                
+                </div>
+                
+                <div class="expertise-bottom-right">
+                    
+                    <h4>Cemafroid accredited</h4>
+                    
+                    <p>(ATP certifications)Largest test centers network.</p>
+                
+                </div>
+                
+                <div class="expertise-bottom-mid">
+                    
+                    <h4>Refrigerated body manufacturer</h4>
+                    
+                    <p>2 manufacturing facilities for the design and manufacture of our refrigerated bodies. Transport society is also an R&D department and a test laboratory to provide tailor-made solutions to the specific needs of our customers and to design the refrigerated véhicles of tomorrow.</p>
+                
+                </div>
+            
+            </article>
+        
+        </section>
+
+        <section class="service-container" id="service-nav">
+
+            
+            
+            <article class="service-content">
+                <h2>Full service !</h2>
+                
+                <div class="service-content-one">
+                    
+                    <h4>24/7 support</h4>
+                    
+                    <p>Round-the-clock assistance, every day, 365 days a year. Provision of a replacement refrigerated vehicle in the event of a breakdown.</p>
+                
+                </div>
+                
+                <div class="service-content-two">
+                    
+                    <h4>Maintenance</h4>
+                    
+                    <p>We carry out legally required tests and preventive maintenance on the vehicles and their equipments.</p>
+                
+                </div>
+                
+                <div class="service-content-three">
+                    
+                    <h4>Spare parts</h4>
+                    
+                    <p>Provision of tyres, fluids and lubricants.</p>
+                
+                </div>
+                
+                <div class="service-content-four">
+                    
+                    <h4>Repairs</h4>
+                    
+                    <p>Repairs to the bodywork and paintwork, as well as all mechanical repairs.</p>
+                
+                </div>
+                
+                <div class="service-content-five">
+                    
+                    <h4>Administrative support</h4>
+                    
+                    <p>We take care of all administrative procedures: license renewal, test certificates, legal paperwork.</p>
+                
+                </div>
+                
+                <div class="service-content-six">
+                    
+                    <h4>Customisation</h4>
+                    
+                    <p>Your vehicle can be customized with your own delivery.</p>
+                
+                </div>
+
+                <div class="service-cta-container">
+                    <button class="service-cta-button">Download our brochure</button>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="contact-container" id="contact-nav">
+            
+            <article class="contact-content">
+                
+                <h2>Contact Us</h2>
+                
+                <img src="./assests/contact/trucks.png" alt="" class="content-img">
+
+            <div class="contact-content-p">
+
+                    <p class="contact-more-info">For more information, please don’t hesitate to get in touch with William :</p>
+
+                    <p>William Racinne – Country Director</p>
+
+                    <p>Telephone:  +27 72 134 1225</p>
+
+                    <p>Email : wracinne@transportsociety.co.za</p>
+
+                    <p>Twitter : @WilliamRacinne</p>
+
+            </div>
+            </article>
+
+            <form action="" method="post" class="contact-form">
+
+                <div class="profile"> 
+                    
+                    <label for="" class="form-title">Profile</label><br>
+
+                    <!-- <div class="profile-radio-container"> -->
+                            
+                        <input type="radio" id="consumer" name="profile-question" value="consumer" checked>
+                        
+                            <label for="Consumer" class="profile-label">Consumer.</label>
+                    
+                          <br class="radio-break">
+                            <!-- <div class="pro-radio">
+                       
+                        <input type="radio" id="professional" name="profile-question" value="professional">
+                    
+                            <label for="professional" class="profile-label">Professional.</label>
+                        </div> -->
+                  
+                        <input type="radio" id="professional" name="profile-question" value="professional">
+                    
+                            <label for="professional" class="profile-label">Professional.</label>
+                        <!-- </div> -->
+                </div>
+
+                <div class="gender">
+                    
+                    <label for="" class="form-title">Title</label><br>
+                    
+                        <input type="radio" id="M" name="gender-question" value="M" checked>
+                    
+                            <label for="M" class="gender-label">M.</label>
+                    
+                        <input type="radio" id="F" name="gender-question" value="F">
+                    
+                            <label for="F" class="gender-label">F.</label>
+
+                </div>
+
+
+                <div class="forename"> 
+                    
+                    <label for="forename" class="form-title">Forename</label><br>
+                        
+                        <input type="text" id="forename" class="input-form"  name="forename" required>
+                
+                </div>
+                
+                <div class="surname"> 
+                    
+                    <label for="surname" class="form-title">Surname</label><br>
+                    
+                        <input type="text" id="surname" class="input-form" name="surname" required>
+                
+                </div>
+
+                <div class="company-name"> 
+                    
+                    <label for="company-name" class="form-title">Company name</label><br>
+                    
+                        <input type="text" id="company-name" class="input-form" name="company-name" required>
+                
+                </div>
+                
+                <div class="job-title"> 
+                    
+                    <label for="job-title" class="form-title">Job title</label><br>
+                    
+                        <input type="text" id="job-title" class="input-form" name="job-title" required>
+                
+                </div>
+
+                <div class="email">
+                    
+                    <label for="email" class="form-title">Email</label><br>
+                    
+                        <input type="email" id="email" class="input-form" name="email" required>
+                
+                </div>
+
+                <div class="phone">
+                    
+                    <label for="phone" class="form-title">Téléphone</label><br>
+                    
+                        <input type="tel" id="phone" class="input-form" name="phone">
+                
+                </div>
+
+                <div class="select-location">
+                
+                    <!--span permet d'afficher tout dans la même ligne-->
+                
+                    <label for="select-location" class="form-title selection-location-title">Select a country</label><br>
+                
+                        <select id="select-location" name="select-location">
+
+                            <option value="South-Africa">South Africa</option>
+                            
+                            <option value="France">France</option>
+                            
+                            <option value="Espagne">Espagne</option>
+                
+                        </select>
+                    </div>
+
+                <div class="write-message">
+                    <label for="message" class="form-title">Message</label><br>
+                    <textarea rows="10" id="message" name="message" placeholder="Your message" required></textarea>
+                
+                </div>
+
+                <div class="contact-form-rgpd">
+
+                    <input type="checkbox" id="rgpd-agree">
+
+                    <p>Cochez cette case si, au-delà de la réponse à votre demande d'information, vous souhaitez recevoir d'autres communications de notre part.*</p>
+
+                </div>
+                
+                <div class="form-button-container">
+
+                    <button class="submit-button" id="submit" type="submit">Submit</button>
+                
+                </div>
+            
+            </form>
+
+        </section>
+
+        <section class="location-container" id="location-nav">
+
+            <div class="location-content">
+
+                <div class="local-ageny-contact">
+                    <h4>Our agencies in South Africa</h4>
+
+                        <p>Contact : Jacobus Van Niekerk</p>
+
+                        <p>Telephone: +27 67 674 0573</p>
+                
+                </div>
+
+                <div id="address-one" class="address">
+
+                    <h5>Johannesburg</h5><br>
+                        <div class="address-p">
+                    <p>99 Skew Road, 1459, </p>
+                    
+                        <div class="address-chevron">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div> 
+                </div> 
+                </div>
+
+                <div id="address-two" class="address">
+
+                    <h5>Durban</h5> <br>
+                        <div class="address-p">
+                    <p>Unit 4b, <br>50 Moreland Drive,  Rinaldo Industrial Park, Redhill 4071, Durban, KZN</p>
+                    
+                        <div class="address-chevron">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                </div>
+                </div>
+
+                <div id="address-three" class="address">
+
+                    <h5>Capetown</h5><br>
+                        <div class="address-p">
+                    <p>111 Kruis Road, Brackenfell, </p>
+                    
+                        <div class="address-chevron">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                
+                    </div>
+
+
+                </div>
+                </div>  
+            <div id="g-maps" class="g-maps"> </div>
+        
+        </section>
+    </main>
+
+    <footer class="footer-container">
+
+        
+        <div class="footer-rgpd-content">
+
+            <div>
+                <img src="./assests/Logo.png" alt="" class="footer-logo">
+            </div>
+            
+            <p class="footer-rgpd-p">*Les informations que nous collections via ce formulaire font l’objet d’un traitement informatique dont la finalité est de pouvoir répondre à votre demande d'information.
+
+                Les destinataires des données sont les services marketing et commercial du groupe Transport society
+                Conformément à la loi du 6 janvier 1978 relative à l'infromatique, aux fichiers et aux libertés modifiée par la loi du 20 juin 2018 et au Règlement de l'Union européenne n°2016/679 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation des données (RGPD), vous disposez d'un droit d'accès, de rectification, de limitation, d'opposition, de portabilité, de limitation et d'effacement des informations qui vous concernent - en envoyant un courrier à dpo@transportsociety.com accompagné d'une copie d'une pièce d'identité valide.
+                 
+                En soumettant ce formulaire, vous acceptez notre politique de confidentialité. </p>
+
+        </div>
+        
+        <div class="footer-legal">
+
+            
+            <p>Legal notice</p>
+            
+            <p>Private policy</p>
+            
+            <p>© 2022 Transport society</p>
+
+        </div>
+
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/5d922bd6e6.js" crossorigin="anonymous"></script>
+    
+    <script src="./app.js"></script>
+
+
+</body>
+
+</html>
