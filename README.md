@@ -1,5 +1,5 @@
 #Transport-Society-LandingPage
- This project was given to me by an
+ This project was given to me by a
  digital web agency as a recruitement exercise, it was finished within 20 hours over the course of 6 days.
  The challenge was to first create a responsive figma prototype and then code the front-end.
 
