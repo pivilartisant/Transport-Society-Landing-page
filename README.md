@@ -10,3 +10,6 @@
  4)Javascript programming : Image caroussel, Filter buttons, Dynamic content injection, Burger Menu toggle 
  5)CSS : Desktop/Tablet/Mobile
  6)Detail animations 
+ 
+ It is accessible at the following netlify link :
+ https://wondrous-youtiao-c7c7fe.netlify.app/
