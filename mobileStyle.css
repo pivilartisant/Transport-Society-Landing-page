@@ -304,6 +304,8 @@ HERO
     border: none; 
 
     cursor:pointer;
+
+    color: black;
 }
 
 .brochure-cta-desktop{
@@ -830,21 +832,35 @@ CONTACT
 .input-form:focus {
     outline: none;
 }
-
+/* 
 input[type='radio']:checked:after {
     width: 15px;
     height: 15px;
     border-radius: 15px;
     top: -2px;
-    left: -1px;
+    left: 0px;
     position: relative;
-    background-color: black;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid white;
+
+} */
+
+#consumer {
+    accent-color: black;
 }
 
+#professional{
+    accent-color: black;
+}
+
+#M{
+    accent-color: black;
+}
+
+#F{
+    accent-color: black;
+}
 .profile-label, .gender-label{
     font-family: Muli;
     font-size: 16px;

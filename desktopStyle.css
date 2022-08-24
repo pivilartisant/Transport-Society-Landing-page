@@ -323,6 +323,8 @@ grid-row:5/5;
     border: none; 
 
     cursor:pointer;
+
+    color: black;
 }
 
 /*Display none*/
@@ -1264,7 +1266,7 @@ CONTACT
     outline: none;
 }
 
-input[type='radio']:checked:after {
+/* input[type='radio']:checked:after {
     width: 15px;
     height: 15px;
     border-radius: 15px;
@@ -1276,6 +1278,22 @@ input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     border: none;
+} */
+
+#consumer {
+    accent-color: black;
+}
+
+#professional{
+    accent-color: black;
+}
+
+#M{
+    accent-color: black;
+}
+
+#F{
+    accent-color: black;
 }
 
 
