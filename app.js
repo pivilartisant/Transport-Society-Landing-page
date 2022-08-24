@@ -291,6 +291,7 @@ console.log('you clicked the burger menu')
 });
 
 navLink1.addEventListener('click', ()=> {
+    burgerMenu.classList.remove('active')
     burgerTop.classList.remove('toggled')
     burgerMid.classList.remove('toggled')
     burgerBot.classList.remove('toggled')
@@ -299,6 +300,7 @@ navLink1.addEventListener('click', ()=> {
     });
 
 navLink2.addEventListener('click', ()=> {
+    burgerMenu.classList.remove('active')
     burgerTop.classList.remove('toggled')
     burgerMid.classList.remove('toggled')
     burgerBot.classList.remove('toggled')
@@ -307,6 +309,7 @@ navLink2.addEventListener('click', ()=> {
     });
 
 navLink3.addEventListener('click', ()=> {
+    burgerMenu.classList.remove('active')
     burgerTop.classList.remove('toggled')
     burgerMid.classList.remove('toggled')
     burgerBot.classList.remove('toggled')
@@ -315,6 +318,7 @@ navLink3.addEventListener('click', ()=> {
     });
 
 navLink4.addEventListener('click', ()=> {
+    burgerMenu.classList.remove('active')
     burgerTop.classList.remove('toggled')
     burgerMid.classList.remove('toggled')
     burgerBot.classList.remove('toggled')
@@ -323,6 +327,7 @@ navLink4.addEventListener('click', ()=> {
     });
 
 navLink5.addEventListener('click', ()=> {
+    burgerMenu.classList.remove('active')
     burgerTop.classList.remove('toggled')
     burgerMid.classList.remove('toggled')
     burgerBot.classList.remove('toggled')
